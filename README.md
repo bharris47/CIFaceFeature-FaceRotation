@@ -3,17 +3,23 @@ CIFaceFeature+FaceRotation
 
 Category for calculating the rotation of a face detected with CoreImage face detection.
 
-How to use it?
-==============
+How does it work?
+=================
 
-It's simple. Detecting faces in iOS gives youa CIFaceFeature object which usually has CGPoints for the eyes and mouth.
+It's simple. iOS Face Detection gives you a CIFaceFeature object which usually has CGPoints for the eyes and mouth.
 
-This category uses those points to determine the angle of tilt to the face. 
+This category uses those points to determine the angle of the face. 
 
-0 would represent a perfectly up and down face.
+0&#176; would represent a perfectly up and down face.
 
 ![Screenshot](http://needgoodcode.com/images/face.png "Tilty Face")
 
+How to use it.
+=============
+
+The category adds a method to CIFaceFeature called `faceRotation` which returns the angle of the face in radians.
+
+The angle of the face is positive if tilted left and negative if tilted right.
 
 License
 =======
