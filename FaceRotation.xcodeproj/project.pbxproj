@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		784545A0154552E100AB70CE /* CIFaceFeature+FaceRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845459F154552E100AB70CE /* CIFaceFeature+FaceRotation.m */; };
+		784545C81545585A00AB70CE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 784545C71545585A00AB70CE /* Icon.png */; };
+		784545CA1545586E00AB70CE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 784545C91545586E00AB70CE /* Icon@2x.png */; };
+		7851DA5B154333CF00893BD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851DA5A154333CF00893BD0 /* UIKit.framework */; };
+		7851DA5D154333CF00893BD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851DA5C154333CF00893BD0 /* Foundation.framework */; };
+		7851DA5F154333CF00893BD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851DA5E154333CF00893BD0 /* CoreGraphics.framework */; };
+		7851DA65154333CF00893BD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7851DA63154333CF00893BD0 /* InfoPlist.strings */; };
+		7851DA67154333CF00893BD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7851DA66154333CF00893BD0 /* main.m */; };
+		7851DA6B154333CF00893BD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7851DA6A154333CF00893BD0 /* AppDelegate.m */; };
+		7851DA6E154333CF00893BD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7851DA6D154333CF00893BD0 /* ViewController.m */; };
+		7851DA71154333CF00893BD0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7851DA6F154333CF00893BD0 /* ViewController.xib */; };
+		7851DA7E154339B300893BD0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851DA7D154339B300893BD0 /* CoreImage.framework */; };
+		7851DA8015433FFE00893BD0 /* face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7851DA7F15433FFE00893BD0 /* face.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7845459E154552E100AB70CE /* CIFaceFeature+FaceRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIFaceFeature+FaceRotation.h"; sourceTree = "<group>"; };
+		7845459F154552E100AB70CE /* CIFaceFeature+FaceRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIFaceFeature+FaceRotation.m"; sourceTree = "<group>"; };
+		784545C71545585A00AB70CE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		784545C91545586E00AB70CE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		7851DA56154333CF00893BD0 /* FaceRotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceRotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7851DA5A154333CF00893BD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7851DA5C154333CF00893BD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7851DA5E154333CF00893BD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7851DA62154333CF00893BD0 /* FaceRotation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceRotation-Info.plist"; sourceTree = "<group>"; };
+		7851DA64154333CF00893BD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7851DA66154333CF00893BD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7851DA68154333CF00893BD0 /* FaceRotation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceRotation-Prefix.pch"; sourceTree = "<group>"; };
+		7851DA69154333CF00893BD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7851DA6A154333CF00893BD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7851DA6C154333CF00893BD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7851DA6D154333CF00893BD0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7851DA70154333CF00893BD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		7851DA7D154339B300893BD0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		7851DA7F15433FFE00893BD0 /* face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7851DA53154333CF00893BD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7851DA7E154339B300893BD0 /* CoreImage.framework in Frameworks */,
+				7851DA5B154333CF00893BD0 /* UIKit.framework in Frameworks */,
+				7851DA5D154333CF00893BD0 /* Foundation.framework in Frameworks */,
+				7851DA5F154333CF00893BD0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7845459D154552E100AB70CE /* CIFaceFeature+FaceRotation */ = {
+			isa = PBXGroup;
+			children = (
+				7845459E154552E100AB70CE /* CIFaceFeature+FaceRotation.h */,
+				7845459F154552E100AB70CE /* CIFaceFeature+FaceRotation.m */,
+			);
+			path = "CIFaceFeature+FaceRotation";
+			sourceTree = "<group>";
+		};
+		7851DA4B154333CE00893BD0 = {
+			isa = PBXGroup;
+			children = (
+				784545C91545586E00AB70CE /* Icon@2x.png */,
+				784545C71545585A00AB70CE /* Icon.png */,
+				7845459D154552E100AB70CE /* CIFaceFeature+FaceRotation */,
+				7851DA60154333CF00893BD0 /* FaceRotation */,
+				7851DA59154333CF00893BD0 /* Frameworks */,
+				7851DA57154333CF00893BD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7851DA57154333CF00893BD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7851DA56154333CF00893BD0 /* FaceRotation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7851DA59154333CF00893BD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7851DA7D154339B300893BD0 /* CoreImage.framework */,
+				7851DA5A154333CF00893BD0 /* UIKit.framework */,
+				7851DA5C154333CF00893BD0 /* Foundation.framework */,
+				7851DA5E154333CF00893BD0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7851DA60154333CF00893BD0 /* FaceRotation */ = {
+			isa = PBXGroup;
+			children = (
+				7851DA69154333CF00893BD0 /* AppDelegate.h */,
+				7851DA6A154333CF00893BD0 /* AppDelegate.m */,
+				7851DA6C154333CF00893BD0 /* ViewController.h */,
+				7851DA6D154333CF00893BD0 /* ViewController.m */,
+				7851DA6F154333CF00893BD0 /* ViewController.xib */,
+				7851DA61154333CF00893BD0 /* Supporting Files */,
+				7851DA7A1543380300893BD0 /* Images */,
+			);
+			name = FaceRotation;
+			path = FaceAngle;
+			sourceTree = "<group>";
+		};
+		7851DA61154333CF00893BD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7851DA62154333CF00893BD0 /* FaceRotation-Info.plist */,
+				7851DA63154333CF00893BD0 /* InfoPlist.strings */,
+				7851DA66154333CF00893BD0 /* main.m */,
+				7851DA68154333CF00893BD0 /* FaceRotation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7851DA7A1543380300893BD0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7851DA7F15433FFE00893BD0 /* face.jpg */,
+			);
+			name = Images;
+			path = ../Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7851DA55154333CF00893BD0 /* FaceRotation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7851DA74154333CF00893BD0 /* Build configuration list for PBXNativeTarget "FaceRotation" */;
+			buildPhases = (
+				7851DA52154333CF00893BD0 /* Sources */,
+				7851DA53154333CF00893BD0 /* Frameworks */,
+				7851DA54154333CF00893BD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceRotation;
+			productName = FaceAngle;
+			productReference = 7851DA56154333CF00893BD0 /* FaceRotation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7851DA4D154333CE00893BD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 7851DA50154333CE00893BD0 /* Build configuration list for PBXProject "FaceRotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7851DA4B154333CE00893BD0;
+			productRefGroup = 7851DA57154333CF00893BD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7851DA55154333CF00893BD0 /* FaceRotation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7851DA54154333CF00893BD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7851DA65154333CF00893BD0 /* InfoPlist.strings in Resources */,
+				7851DA71154333CF00893BD0 /* ViewController.xib in Resources */,
+				7851DA8015433FFE00893BD0 /* face.jpg in Resources */,
+				784545C81545585A00AB70CE /* Icon.png in Resources */,
+				784545CA1545586E00AB70CE /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7851DA52154333CF00893BD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7851DA67154333CF00893BD0 /* main.m in Sources */,
+				7851DA6B154333CF00893BD0 /* AppDelegate.m in Sources */,
+				7851DA6E154333CF00893BD0 /* ViewController.m in Sources */,
+				784545A0154552E100AB70CE /* CIFaceFeature+FaceRotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7851DA63154333CF00893BD0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7851DA64154333CF00893BD0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7851DA6F154333CF00893BD0 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7851DA70154333CF00893BD0 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7851DA72154333CF00893BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7851DA73154333CF00893BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7851DA75154333CF00893BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceAngle/FaceRotation-Prefix.pch";
+				INFOPLIST_FILE = "FaceAngle/FaceRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = FaceRotation;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7851DA76154333CF00893BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FaceAngle/FaceRotation-Prefix.pch";
+				INFOPLIST_FILE = "FaceAngle/FaceRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = FaceRotation;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7851DA50154333CE00893BD0 /* Build configuration list for PBXProject "FaceRotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7851DA72154333CF00893BD0 /* Debug */,
+				7851DA73154333CF00893BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7851DA74154333CF00893BD0 /* Build configuration list for PBXNativeTarget "FaceRotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7851DA75154333CF00893BD0 /* Debug */,
+				7851DA76154333CF00893BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7851DA4D154333CE00893BD0 /* Project object */;
+}
