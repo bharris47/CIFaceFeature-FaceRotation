@@ -10,6 +10,8 @@
 		784545A0154552E100AB70CE /* CIFaceFeature+FaceRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845459F154552E100AB70CE /* CIFaceFeature+FaceRotation.m */; };
 		784545C81545585A00AB70CE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 784545C71545585A00AB70CE /* Icon.png */; };
 		784545CA1545586E00AB70CE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 784545C91545586E00AB70CE /* Icon@2x.png */; };
+		784545D71546618300AB70CE /* faces.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 784545D61546618300AB70CE /* faces.jpg */; };
+		784545D91546746300AB70CE /* glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 784545D81546746300AB70CE /* glasses.png */; };
 		7851DA5B154333CF00893BD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851DA5A154333CF00893BD0 /* UIKit.framework */; };
 		7851DA5D154333CF00893BD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851DA5C154333CF00893BD0 /* Foundation.framework */; };
 		7851DA5F154333CF00893BD0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7851DA5E154333CF00893BD0 /* CoreGraphics.framework */; };
@@ -27,6 +29,8 @@
 		7845459F154552E100AB70CE /* CIFaceFeature+FaceRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIFaceFeature+FaceRotation.m"; sourceTree = "<group>"; };
 		784545C71545585A00AB70CE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		784545C91545586E00AB70CE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		784545D61546618300AB70CE /* faces.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faces.jpg; sourceTree = "<group>"; };
+		784545D81546746300AB70CE /* glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glasses.png; sourceTree = "<group>"; };
 		7851DA56154333CF00893BD0 /* FaceRotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceRotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7851DA5A154333CF00893BD0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7851DA5C154333CF00893BD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,6 +132,8 @@
 		7851DA7A1543380300893BD0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				784545D81546746300AB70CE /* glasses.png */,
+				784545D61546618300AB70CE /* faces.jpg */,
 				7851DA7F15433FFE00893BD0 /* face.jpg */,
 			);
 			name = Images;
@@ -189,6 +195,8 @@
 				7851DA8015433FFE00893BD0 /* face.jpg in Resources */,
 				784545C81545585A00AB70CE /* Icon.png in Resources */,
 				784545CA1545586E00AB70CE /* Icon@2x.png in Resources */,
+				784545D71546618300AB70CE /* faces.jpg in Resources */,
+				784545D91546746300AB70CE /* glasses.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

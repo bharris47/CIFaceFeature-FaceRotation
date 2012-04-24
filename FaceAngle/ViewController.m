@@ -9,7 +9,6 @@
 
 @implementation ViewController
 @synthesize imageView;
-@synthesize rotationInfo;
 @synthesize features;
 
 - (void)viewDidLoad {
@@ -27,46 +26,41 @@
                                                                                       forKey:CIDetectorAccuracy]];
     
     self.features = [faceDetector featuresInImage:[CIImage imageWithCGImage:image.CGImage]];
-    
-    NSMutableString *rotations = [NSMutableString string];
-    
-    // show the face angle in degrees
-    if (self.features.count > 0) {
-        for (CIFaceFeature *feature in self.features) {
-            CIFaceFeature *faceFeature = (CIFaceFeature *) feature;               
-            [rotations appendFormat:@"%f, ", [faceFeature faceRotation] * 180/M_PI];
-        }
-    }
         
-    if (rotations.length > 0) {
-        self.rotationInfo.text = [rotations substringWithRange:NSMakeRange(0, rotations.length-2)];
-    }
-    
-    [self traceAngle];
+    [self hipster];
 }
 
-- (void)traceAngle {
+- (void)hipster {
     UIImage *image = self.imageView.image;
-    
-    // only draws the first detected face angle
-    CIFaceFeature *feature = [self.features objectAtIndex:0];
+    UIImage *glasses = [UIImage imageNamed:@"glasses.png"];
     
     UIGraphicsBeginImageContext(image.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    
+    for (CIFaceFeature *feature in self.features) {
+        CGFloat glassesWidth = feature.bounds.size.width;
+        CGSize glassesSize = CGSizeMake(glassesWidth, (glassesWidth / glasses.size.width) * glasses.size.height);
+                
+        CGContextTranslateCTM(context, image.size.width / 2, image.size.height / 2);
+        CGContextRotateCTM(context, -[feature faceRotation]);
+        CGContextTranslateCTM(context, -image.size.width / 2, -image.size.height / 2);
+
         
-    CGPoint eyesMidPoint = CGPointMake((feature.rightEyePosition.x + feature.leftEyePosition.x) / 2,
-                                       (feature.rightEyePosition.y + feature.leftEyePosition.y) / 2);
-    
-    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
-    CGContextSetLineWidth(context, 10.0);
-    
-    CGContextBeginPath(context);
-    CGContextMoveToPoint(context, eyesMidPoint.x, image.size.height - eyesMidPoint.y);
-    CGContextAddLineToPoint(context, feature.mouthPosition.x, image.size.height - feature.mouthPosition.y);
-    CGContextAddLineToPoint(context, feature.mouthPosition.x, image.size.height - eyesMidPoint.y);
-    CGContextStrokePath(context);
+        CGPoint eyesMidPoint = CGPointMake((feature.rightEyePosition.x + feature.leftEyePosition.x) / 2,
+                                           (feature.rightEyePosition.y + feature.leftEyePosition.y) / 2);
+        
+        CGRect glassesRect = CGRectMake(eyesMidPoint.x - glassesSize.width / 2,
+                                        image.size.height - eyesMidPoint.y - glassesSize.height / 2,
+                                        glassesSize.width, glassesSize.height);
+        
+        [glasses drawInRect:glassesRect];
+        
+        CGContextTranslateCTM(context, image.size.width / 2, image.size.height / 2);
+        CGContextRotateCTM(context, [feature faceRotation]);
+        CGContextTranslateCTM(context, -image.size.width / 2, -image.size.height / 2);
+    }
         
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -76,8 +70,12 @@
 
 - (void)dealloc {
     self.imageView = nil;
-    self.rotationInfo = nil;
     self.features = nil;
     [super dealloc];
 }
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return YES;
+}
+
 @end

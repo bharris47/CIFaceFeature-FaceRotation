@@ -9,7 +9,6 @@
 
 @interface ViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UIImageView *imageView;
-@property (retain, nonatomic) IBOutlet UILabel *rotationInfo;
 @property (retain, nonatomic) NSArray *features;
 
 @end
