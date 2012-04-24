@@ -2,7 +2,7 @@ CIFaceFeature+FaceRotation
 ==========================
 Category for calculating the rotation of a face detected with CoreImage face detection.
 
-![Screenshot](http://needgoodcode.com/images/face.png "Tilty Face")
+![Screenshot](http://needgoodcode.com/images/face.png "Hipster")
 * * *
 
 How does it work?
